@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(245, 235, 220);
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff8732;
+    clip-path: circle(540px at right 640px);
+}
+
+.circle2 {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff8732;
+    clip-path: circle(90px at left 200px);
+}
+
+.navbar-light .navbar-brand,
+#burgerBold {
+    color: rgb(255, 135, 50);
+    font-weight: bold;
+    font-family: unset;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(80, 35, 20);
+    font-weight: 500;
+    transition: linear .2s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(255, 135, 50);
+}
+
+.showcase {
+    padding: 80px 0;
+}
+
+h2 {
+    font-size: 2.3rem;
+}
+
+.showcase .text {
+    font-weight: 600;
+    font-size: 18px;
+    color:  rgb(80, 35, 20);
+    padding: 20px;
+}
+
+.showcase #btns {
+    padding-top: 50px;
+    display: flex;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: rgb(255, 135, 50);
+    color: white;
+    font-weight: 600;
+    transition: linear .2s;
+    margin-left: 7px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: rgb(255, 135, 50);
+    border-width: 1px;
+    border-color: rgb(255, 135, 50);
+}
+
+.burgerImgs {
+    transition: linear .2s;
+}
+
+.burgerImgs:hover {
+    transform: translate(-5px, -10px);
+}
+
+#insgesamt {
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    background-color: #f5ebdc;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(214, 35, 0);
+    font-weight: 700;
+    transition: linear .3s;
+    outline: none;
+    border: none;
+}
+
+#price {
+    width: 100%;
+    font-size: 33px;
+    font-style: italic;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(226 212 192);
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#numPrice {
+    color: rgb(214, 35, 0);
+    font-weight: 800;
+}
+
+
+.form-control {
+    width: auto;
+}
+
+.socMed {
+    display: flex;
+    text-align: center;
+}
+
+.soc a {
+    padding: 0 10px 0 10px;
+    font-size: 30px;
+    color: rgb(80, 35, 20);
+    transition: ease .2s;
+}
+
+.soc a:hover {
+    color: rgb(255, 135, 50);
+}
+
+@media only screen and (max-width: 576px) and (min-width: 400px) {
+
+    #btns {
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    #dumbText{
+        display: none;
+    }
+    
+    .text h2 {
+        text-align: center;
+        font-size: 1.7rem;
+    }
+    
+    .navbar-light .navbar-brand {
+        color: rgb(80, 35, 20);
+    }
+    
+    #price {
+        padding: 0;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .circle {
+        clip-path: circle(140px at right 470px);
+    }
+    
+    .selIMG {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+    
+    #insgesamt {
+        background-color: rgb(214, 35, 0);
+        color: white;
+        font-size: 17px;
+    }
+    
+    .navbar {
+        z-index: 1;
+        background-color: rgb(255, 135, 50);
+        position: absolute;
+        width: 100%;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        font-weight: bold;
+    }
+    
+    
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: white;
+    }
+    
+    .circle2 {
+        display: none;
+    }
+
+    .form-control, #warBtn{
+        font-size: 12px;
+    }
+
+    #price{
+        font-size: 20px;
+    }
+    
+    .soc a{
+        font-size: 15px;
+    }
+    
+    }
+    
+
+    @media only screen and (width: 768px) {
+        .selIMG{
+            flex-direction: column;
+        }
+    }
+
+
+    @media only screen and (max-width: 769px) and (min-width: 576px) {
+    #btns {
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    #dumbText{
+        display: none;
+    }
+    
+    .text h2 {
+        text-align: center;
+        font-size: 2.0rem;
+    }
+    
+    .navbar-light .navbar-brand {
+        color: rgb(80, 35, 20);
+    }
+    
+    #price {
+        padding: 0;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .circle {
+        clip-path: circle(340px at right 645px);
+    }
+    
+    .selIMG {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+    
+    #insgesamt {
+        background-color: rgb(214, 35, 0);
+        color: white;
+    }
+    
+    .navbar {
+        z-index: 1;
+        background-color: rgb(255, 135, 50);
+        position: absolute;
+        width: 100%;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        font-weight: bold;
+    }
+    
+    
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: white;
+    }
+    
+    .circle2 {
+        display: none;
+    }
+    .soc a{
+        font-size: 17px;
+    }
+    
+}
+
+@media only screen and (max-width: 992px) and (min-width: 767px) {
+    .form-control, #warBtn{
+        font-size: 15px;
+    }
+
+    #price{
+        font-size: 22px;
+    }
+
+    .text h2 {
+        font-size: 1.8rem;
+    }
+
+    #dumbText {
+        font-size: 15px;
+    }
+
+    #insgesamt {
+        font-size: 15px;
+    }
+
+    .row {
+        align-items: center;
+    }
+
+    .form-control, #warBtn{
+        font-size: 12px;
+    }
+
+    .circle{
+        clip-path: circle(400px at right 480px);
+    }
+    .soc a{
+        font-size: 20px;
+        position: relative;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 400px) and (min-width: 200px) {
+
+    #btns {
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    #dumbText{
+        display: none;
+    }
+    
+    .text h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+    .navbar-light .navbar-brand {
+        color: rgb(80, 35, 20);
+    }
+    
+    #price {
+        padding: 0;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .circle {
+        display: none;
+    }
+    
+    .selIMG {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+    
+    #insgesamt {
+        background-color: rgb(214, 35, 0);
+        color: white;
+        font-size: 17px;
+    }
+    
+    .navbar {
+        z-index: 1;
+        background-color: rgb(255, 135, 50);
+        position: absolute;
+        width: 100%;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        font-weight: bold;
+    }
+    
+    
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: white;
+    }
+    
+    .circle2 {
+        display: none;
+    }
+
+    .form-control, #warBtn{
+        font-size: 9px;
+    }
+
+    #price{
+        font-size: 17px;
+    }
+    
+    .soc a{
+        font-size: 12px;
+    }
+    
+    }
